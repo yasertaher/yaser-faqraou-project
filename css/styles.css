@@ -1,0 +1,328 @@
+:root{
+/* add your style variables here */
+/* primary color used for button background, logo ...  */
+    --primaryColor:green;
+    --primaryColorVariant:rgb(8, 161, 8);
+    --primaryColorDark:rgb(8, 99, 8);
+    --secondaryColor:rgb(204, 153, 25);
+    --secondaryColorVariant:rgb(232, 181, 53);
+    --secondaryColorDark:rgb(146, 108, 13);
+
+    --backgroundColor:white;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    
+}
+
+
+
+/* Media queries */
+
+@media screen and (min-width: 768px){
+    body{    
+        background: url('../images/background.png');
+    
+    }
+
+    #logo{
+
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 170px;
+
+
+    }
+    
+    .login{
+        background-color: white;
+        position: fixed;
+        width: 90%;
+        height: 50%;
+        bottom: 0px;
+       
+        padding: 35px;
+        padding-left: 43px;
+        border-radius:60px 60px 0 0 ;
+        margin-right: 20px;
+        direction: rtl;
+    }
+
+    h1{
+        padding-bottom: 30px;
+        font-size: 70px;
+        padding-top: 20px;
+        padding-right: 50px;
+    }
+
+    form{
+        padding-right: 50px;
+        font-size: 20px;
+        color: gray;
+
+
+    }
+
+    label{
+        position: relative;
+        top: 20px;
+        background-color: white;
+    }
+
+    
+
+    input{
+        padding: 5px;
+        margin-top: 10px;
+        padding:15px;
+        border-color: rgb(206, 204, 204);
+        border-radius: 30px 30px 30px 30px;
+    }
+    input[type=submit]{
+        background-color: var(--primaryColor);
+        width: 80%;
+        height: 7%;
+        text-align: center;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        font-size: 40px;
+        font-weight:lighter;
+        padding-top: 30px;
+        margin-bottom: 20px;
+        position: fixed;
+        bottom: 0px;
+    }
+
+
+
+    /* --- --- ---  Profile --- --- --- */
+
+    .container{
+        background-color: white;
+        border-radius: 90px 90px 0 0;
+        width: 100%;
+        height: 80%;
+        position: fixed;
+        bottom: 0;
+    }
+
+    .container #user{
+        width: 250px;
+        position: fixed;
+        top:  90px;
+        left: 250px;
+    }
+
+    h3{
+        text-align: center;
+        font-size: 50px;
+        padding-top: 150px;
+    }
+
+    p{
+        color: grey;
+
+    }
+
+    .nav_list{
+        color: grey;
+        padding: 20px 0px;
+        width: 80px;
+        height: 100vh;
+        position: fixed ;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+    
+
+    .nav_item{
+        list-style: none;
+        font-size: 20px;
+        color: grey;
+        text-align: center;
+        transition: all 200ms ease-in;
+
+    }
+
+    .nav_item img{
+        width: 50px;
+        height: 50px;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .nav_list{
+
+
+        background: white;
+        box-shadow: 10px 0px 10px gray;
+        direction: rtl;
+        flex-direction: row;
+        width: 100%;
+        height: 90px;
+        bottom: 0;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+
+    #logout{
+        color: grey;
+        background-color: white;
+        border: solid grey 1px;
+        font-size: x-large;
+        text-align: center;
+        padding: 4px;
+        width: 35%;
+        position: fixed;
+        bottom: 180px;
+        left: 250px;
+
+    }
+
+        /* --- --- ---  groups --- --- --- */
+
+        h1{
+            text-align: right;
+            font-size: 60px;
+        }
+
+        h4{
+            text-align: right;
+            font-size: x-large;
+            font-weight: 10px;
+            padding-right: 50px;
+        }
+
+        h5{
+            font-size: 20px;
+        }
+        hr{
+            width: 80%;
+            margin-left: 50px;
+        }
+
+        .box{
+            height: 30%;
+            background-color: white;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+        }
+
+        .box p{
+            font-size: 20px;
+        }
+
+        .box::-webkit-scrollbar{
+            display: none;
+        }
+        .groups{
+            direction: rtl;
+            background-color: rgb(235, 230, 230);
+            display: inline-block;
+            border-radius: 50px;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            overflow: hidden;
+            width: 30%;
+            height: 250px;
+        }
+
+        .groups img{
+            width: 100px;
+            border-radius: 20px;
+        }
+
+        .parent{
+            grid-template-columns: repeat(3,auto);
+            width:100%;
+            text-align: center;
+            overflow-x: hidden;
+            overflow-y:scroll;
+            padding-right: 200px;
+            direction: rtl;
+        }
+
+        .parent .groups{
+            column-gap: 100px;
+        }
+
+        #button{
+            width: 15%;
+            position: fixed;
+            bottom: 130px;
+            left: 650px;
+        }
+
+
+       /* --- --- ---  Home-- --- --- */
+
+       .home{
+           width: 80%;
+           height: 50px;
+           display: flex;
+           float: right;
+           overflow: hidden;
+           border: solid rgb(137, 214, 137) 3px;
+           border-radius: 10px;
+           box-shadow: 5px;
+           flex-direction: row-reverse;
+           padding: 15px;
+           margin-top: 30px;
+           margin-right: 60px;
+           justify-content: space-around;
+
+       }
+
+       h4{
+           font-size: 30px;
+           margin-right: 20px;
+       }
+       .home div img{
+           width:35%;
+           margin-left: 80px;
+           position: relative;
+           bottom: 20px;
+           left: 30px;
+       }
+
+       .home div{
+           width: 35%;
+           padding: 15px;
+           text-align: center;
+       }
+
+       .home p{
+           color: black;
+           font-size: 30px;
+           text-align: right;
+           direction: rtl;
+       }
+
+
+
+       
+
+
+
+
+
+
+
+
+    
+}
